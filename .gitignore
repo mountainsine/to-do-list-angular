@@ -55,4 +55,7 @@ dkms.conf
 */Playground/
 
 # Mac Metadata
-.DS_Store
+*.DS_Store
+
+# IDE metadata
+*.vscode

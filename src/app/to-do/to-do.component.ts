@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-to-do',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToDoComponent implements OnInit {
 
-  constructor() { }
+/// Properties are usually camelCase
 
+  @Input() title: string = 'john jacob jingleheimer';
+  toDos: string[]=[]
+  /// ^ this initializes an empty array (the equals part)
+  newItemName: string = 'jingleheimer John';
+  /// @Input() newItemName: string = 'jingleheimer John';
+  constructor() { }
   ngOnInit(): void {
   }
-
 }
