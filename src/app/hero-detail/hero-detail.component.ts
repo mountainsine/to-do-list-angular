@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-detail.component.scss']
 })
 export class HeroDetailComponent implements OnInit {
-  hero = 'xavier'
+  yam1 = 'xavier';
+  yam2 = 'xavier';
+  yam3 = 'xavier';
+  yam4 = 'xavier';
   constructor() { }
   ngOnInit(): void {
   }
