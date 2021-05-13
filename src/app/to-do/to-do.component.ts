@@ -7,22 +7,14 @@ import { Component, Input, OnInit, } from '@angular/core';
 })
 
 export class ToDoComponent implements OnInit {
-  toDoInputField1: string = 'Put a To do task here!';
+  newItemName: string = 'Put a To do task here!';
   toDos: string[]=[]
-  onClickToDo
-  /// Experiments with HERO strings for fun
-  hero = 'What are you going to do?';
-  hero2 = 'Jubilee';
-  hero3 = 'Wolverine';
-  hero4 = 'Storm';
   bannerTitleText = 'Welcome to the What do you need to do Club!!!!';
   // @Input() title: string = 'What do you need to do?';
-
-
-  AddToList = function () {
-    alert("thisworks");
+    addToList() {
+      this.toDos.push(this.newItemName)
+      alert(this.newItemName);
   }  
-
 
   constructor() {
    }
